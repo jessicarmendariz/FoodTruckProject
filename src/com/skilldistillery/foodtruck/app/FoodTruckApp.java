@@ -113,6 +113,6 @@ public class FoodTruckApp {
 	}
 
 	private void exit() {
-		System.out.println("Goodbye! Stay Hungry!");
+		System.out.println("Goodbye & Stay Hungry!");
 	}
 }
