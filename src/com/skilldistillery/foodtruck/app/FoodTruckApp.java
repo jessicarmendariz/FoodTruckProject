@@ -37,16 +37,18 @@ public class FoodTruckApp {
 	}
 
 
-	public void createTrucks(Scanner input) {
+	public void createTrucks(Scanner kb) {
 		for (int i = 0; i < trucks.length; i++) {
 			System.out.println("Enter Name of Food Truck " + (i + 1) + ":");
-			String name = input.next();
+			String name = kb.next();
 			if (name.toLowerCase().equals("quit")) {
 				break; }
 			System.out.println("Enter Food Type " + (i + 1) + ":");
-			String type = input.next();
+			String type = kb.next();
+			if (type.toLowerCase().equals("quit")) {
+				break; }
 			System.out.println("Enter Rating " + (i + 1) + ":");
-			int rating = input.nextInt();
+			int rating = kb.nextInt();
 	
 			trucks[i] = new FoodTruck(name, rating, type); 
 			
