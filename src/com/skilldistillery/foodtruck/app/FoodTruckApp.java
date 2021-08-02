@@ -41,6 +41,8 @@ public class FoodTruckApp {
 		for (int i = 0; i < trucks.length; i++) {
 			System.out.println("Enter Name of Food Truck " + (i + 1) + ":");
 			String name = input.next();
+			if (name.toLowerCase().equals("quit")) {
+				break; }
 			System.out.println("Enter Food Type " + (i + 1) + ":");
 			String type = input.next();
 			System.out.println("Enter Rating " + (i + 1) + ":");
@@ -48,10 +50,6 @@ public class FoodTruckApp {
 	
 			trucks[i] = new FoodTruck(name, rating, type); 
 			
-			if (name.toLowerCase().equals("Quit")) {
-				break; }
-			else {
-				continue; }
 			}
 	}
 

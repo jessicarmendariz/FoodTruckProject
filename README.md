@@ -7,7 +7,7 @@ Food Truck is an application that allows a user to input the name of up to five 
 
 ### How To Use
 
-ghjk
+Open the Food Truck Application
 
 
 ### Building Food Truck 
